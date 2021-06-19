@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Study</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #090723;
+            font-family: Montserrat, "SF UI Text", Helvetica, Arial;
+            background-image: url("./images/study.png");
+            background-position: top;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            color: #de3d69;
+        }
+
+        li {
+            list-style: none;
+        }
+        input {
+            cursor: pointer;
+        }
+
+        .navigate {
+            width: 1160px;
+            height: 80px;
+            margin: 0 auto;
+            /* background-color: pink; */
+            padding-left: 20px;
+            padding-right: 40px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .navigate .logo {
+            float: left;
+            color: white;
+            width: 200px;
+            height: 80px;
+            padding: 20px;
+        }
+
+        .navigate .logo img {
+            display: block;
+            width: 100px;
+        }
+
+        .navigate .links {
+            float: left;
+        }
+
+        .navigate .links ul li {
+            float: left;
+            width: 100px;
+            height: 80px;
+            line-height: 80px;
+        }
+
+        .navigate .register {
+            float: right;
+            width: 200px;
+            height: 80px;
+            line-height: 80px;
+        }
+
+        .navigate input {
+            outline: none;
+            border: 1px solid white;
+            border-radius: 20px;
+            width: 200px;
+            height: 30px;
+            color: white;
+            background-color: transparent;
+        }
+
+        .navigate input:hover {
+            background-color: #de3d69;
+        }
+
+        /* ==================================================== */
+        .content {
+            font-family: arial, 'pingfang sc', stheiti, simsun, sans-serif;
+        }
+
+        td,
+        th {
+            border: 2px solid #ccc;
+            width: 100px;
+            height: 50px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        .tableContent {
+            position: relative;
+            width: 850px;
+            height: 500px;
+            margin: 80px auto;
+            margin-bottom: 0;
+            color: black;
+            background-color: white;
+            padding: 40px 50px;
+            border-radius: 10px;
+            box-shadow: 3px 6px 20px 3px #ccc;
+        }
+
+        .tableContent img {
+            position: absolute;
+            width: 40px;
+            top: 40px;
+        }
+
+        /* ================================= */
+        .works {
+            width: 850px;
+            height: 500px;
+            margin: 80px auto;
+            color: black;
+            padding: 60px 100px;
+            background-color: white;
+            box-shadow: 3px 6px 20px 3px #ccc;
+            border-radius: 10px;
+        }
+
+        .works img {
+            display: inline-block;
+            text-align: center;
+            width: 200px;
+            margin: 60px;
+        }
+
+        .fixImg .left {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        .fixImg .right {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+
+        /* ============================= */
+        .click {
+            position: absolute;
+            left: 90%;
+            top: 30%;
+            width: 50px;
+            margin: 50px auto;
+            text-align: center;
+            animation: myMove .5s infinite alternate linear;
+            -moz-animation: myMove .5s infinite alternate linear;
+            -webkit-animation: myMove .5s infinite alternate linear;
+            -o-animation: myMove .5s infinite alternate linear;
+        }
+
+        @keyframes myMove {
+            0% {
+                transform: scale(.7)
+            }
+
+            100% {
+                transform: scale(1)
+            }
+        }
+        @-moz-keyframes myMove {
+            0% {
+                transform: scale(.7)
+            }
+
+            100% {
+                transform: scale(1)
+            }
+        }
+
+        @-webkit-keyframes myMove {
+            0% {
+                transform: scale(.7)
+            }
+
+            100% {
+                transform: scale(1)
+            }
+        }
+
+        @-o-keyframes myMove {
+            0% {
+                transform: scale(.7)
+            }
+
+            100% {
+                transform: scale(1)
+            }
+        }
+        .click input {
+            outline: none;
+            border: none;
+            border-radius: 60px;
+            width: 60px;
+            height: 60px;
+            color: white;
+            font-size: 10px;
+            background-color: #de3d69;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigate">
+        <div class="logo">
+            <a href="./index.html"><img src="./images/logo.png" alt=""></a>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutme.html">My Life</a></li>
+                <li><a href="./study.html">My Study</a></li>
+                <li><a href="./interests.html">My Interests</a></li>
+            </ul>
+        </div>
+        <div class="register">
+            <input type="button" value="Register & Login">
+        </div>
+    </div>
+    <div class="content">
+        <div class="tableContent">
+            <img src="./images/笑脸.png" alt="">
+            <h2 style="text-align: center;margin-bottom: 30px;">我的2021春季课表</h2>
+            <table>
+                <tr>
+                    <th> </th>
+                    <th>星期一</th>
+                    <th>星期二</th>
+                    <th>星期三</th>
+                    <th>星期四</th>
+                    <th>星期五</th>
+                    <th>星期六</th>
+                    <th>星期日</th>
+                </tr>
+                <tr>
+                    <th>第一大节</th>
+                    <td>网页设计与开发</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>第二大节</th>
+                    <td>网页设计与制作</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>第三大节</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>第四大节</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>第五大节</th>
+                    <td></td>
+                    <td>希腊神话与圣经故事</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>第六大节</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="click">
+            <input type="button" name="" id="" value="Clike Me">
+        </div>
+
+
+        <div class="works" style="display: none;">
+            <a href="https://blog.csdn.net/qq_45192089?spm=1000.2115.3001.5343"><img src="./images/csdn.png" alt=""></a>
+            <a href="https://github.com/ZRF-star"><img src="./images/github.png" alt=""></a>
+            <p>我的学习笔记在CSDN,平时代码托管在github,点击相应logo可以关注我哦（虽然很菜，哈哈哈）！</p>
+        </div>
+
+        <div class="fixImg">
+            <img src="./images/下载.png" alt="" class="left" width="100px">
+            <img src="./images/下载 (1).png" alt="" class="right" width="80px">
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            let btn = document.querySelector(".register");
+            let click = document.querySelector(".click");
+            let works = document.querySelector(".works");
+            let tableContent = document.querySelector(".tableContent");
+
+            btn.addEventListener("click", function () {
+                location.href = "./register.html";
+            });
+            click.addEventListener("click", function () {
+                if (works.style.display == "block") {
+                    works.style.display = "none";
+                    tableContent.style.display = "block"
+                } else {
+                    works.style.display = "block";
+                    tableContent.style.display = "none";
+                }
+
+            })
+        }
+    </script>
+</body>
+
+</html>

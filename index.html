@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #090723;
+            font-family: Montserrat, "SF UI Text", Helvetica, Arial;
+            background-image: url("./images/aoligei.png");
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            color: #de3d69;
+        }
+
+        li {
+            list-style: none;
+        }
+        input {
+            cursor: pointer;
+        }
+        /* ======================================== */
+        .navigate {
+            width: 1160px;
+            height: 80px;
+            margin: 0 auto;
+            /* background-color: pink; */
+            padding-left: 20px;
+            padding-right: 40px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .navigate .logo {
+            float: left;
+            color: white;
+            width: 200px;
+            height: 80px;
+            padding: 20px;
+        }
+
+        .navigate .logo img {
+            display: block;
+            width: 100px;
+        }
+
+        .navigate .links {
+            float: left;
+        }
+
+        .navigate .links ul li {
+            float: left;
+            width: 100px;
+            height: 80px;
+            line-height: 80px;
+        }
+        
+        .navigate .register {
+            float: right;
+            width: 200px;
+            height: 80px;
+            line-height: 80px;
+        }
+
+        .navigate input {
+            outline: none;
+            border: 1px solid white;
+            border-radius: 20px;
+            width: 200px;
+            height: 30px;
+            color: white;
+            background-color: transparent;
+        }
+        .navigate input:hover {
+            background-color: #de3d69;
+        }
+
+        /* =========================================== */
+        .content {
+            width: 1160px;
+            margin: 100px auto;
+            color: white;
+            /* background-color: pink; */
+        }
+
+        .content p {
+            text-align: center;
+        }
+
+        .aboutme {
+            font-size: 26px;
+            color: #de3d69;
+            margin-bottom: 20px;
+        }
+        .start {
+            width: 1160px;
+            margin: 100px auto;
+            text-align: center;
+        }
+        .start input {
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            width: 400px;
+            height: 80px;
+            color: white;
+            font-size: 30px;
+            background-color: #de3d69;
+        }
+        .fixImg {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigate">
+        <div class="logo">
+            <a href="./index.html"><img src="./images/logo.png" alt=""></a>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutme.html">About Me</a></li>
+                <li><a href="./study.html">My Study</a></li>
+                <li><a href="./interests.html">My Interests</a></li>
+            </ul>
+        </div>
+        <div class="register">
+            <input type="button" value="Register & Login">
+        </div>
+    </div>
+
+    <div class="content">
+        <p class="aboutme">About Me</p>
+        <p style="font-size: 30px;margin-bottom: 10px;">Hello,I'm ZhangRuiFang,</p>
+        <p style="font-size: 30px;margin-bottom: 20px;">I'm a junior student majoring in digital media technology
+        </p>
+        <p style="font-size: 14px;margin-bottom: 10px;">I am a passionate and positive student who is about to graduate. I hope I can
+            learn a lot of knowledge, </p>
+        <p style="font-size: 14px;">enrich my life and be happy forever.</p>
+    </div>
+    
+    <div class="start">
+        <input type="button" name="按钮" id="" value="Follow Me">
+    </div>
+
+    <div class="fixImg">
+        <img src="./images/fly.png" alt="">
+    </div>
+
+    <script>
+        window.onload = function() {
+            let btn = document.querySelector(".register");
+            let start = document.querySelector(".start");
+            btn.addEventListener("click", function() {
+                location.href = "./register.html";
+            });
+            start.addEventListener("click", function() {
+                location.href = "./aboutme.html";
+            })
+        }
+    </script>
+</body>
+</html>
